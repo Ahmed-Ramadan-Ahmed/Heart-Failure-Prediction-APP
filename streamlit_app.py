@@ -58,12 +58,14 @@ def Main():
     
     leetcode_url = "https://leetcode.com/u/A_Ramadan_A/"
     codeforces_url = "https://codeforces.com/profile/Master_by2025"
-
+    email = "aramadan442000@gmail.com"
     st.sidebar.image("Ahmed.jpg", width=100)
     # Create a sidebar
     with st.sidebar:
         with st.sidebar.container():
             st.write("Connect with me:")
+            # Mail 
+            st.markdown(f"[![Email](https://img.shields.io/badge/Email-Contact-informational)](mailto:{email})")
             # GitHub badge
             st.markdown(f"[![GitHub](https://img.shields.io/badge/GitHub-Profile-green)]({github_url})")
             # LinkedIn badge
@@ -72,8 +74,7 @@ def Main():
             st.markdown(f"[![LeetCode](https://img.shields.io/badge/LeetCode-Profile-red)]({leetcode_url})")
             # Codeforces badge
             st.markdown(f"[![Codeforces](https://img.shields.io/badge/Codeforces-Profile-purple)]({codeforces_url})")
-        
-
+            
     
     if st.button("Predict"):
         result = prediction(Age,Sex,ChestPainType,RestingBP,Cholesterol,FastingBS,RestingECG,MaxHR,ExerciseAngina,Oldpeak,ST_Slope)
