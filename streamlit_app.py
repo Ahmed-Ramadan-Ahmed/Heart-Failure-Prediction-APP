@@ -76,6 +76,6 @@ def Main():
     
     if st.button("Predict"):
         result = prediction(Age,Sex,ChestPainType,RestingBP,Cholesterol,FastingBS,RestingECG,MaxHR,ExerciseAngina,Oldpeak,ST_Slope)
-        list_result = ["No Heart Disease" , "HeartDisease"]
+        list_result = ["No Heart Diseases ❤" , "High probability of Heart Diseases 💔"]
         st.text(list_result[result])
 Main()
