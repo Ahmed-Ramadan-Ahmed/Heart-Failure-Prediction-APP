@@ -1,11 +1,14 @@
-import joblib
+%%writefile Heart_Failure.py
+import pickle
 import pandas as pd
 import numpy as np
 import streamlit as st
 
-Model = joblib.load("Heart_Failure.pkl")
-Inputs = joblib.load("inputs.pkl")
-
+with open('model.pkl', 'rb') as f:
+    Model = pickle.load(f)
+with open('Inputs.pkl', 'rb') as f:
+    Inputs = pickle.load(f)
+    
 def prediction(Age,Sex,ChestPainType,RestingBP,Cholesterol,FastingBS,RestingECG,MaxHR,ExerciseAngina,Oldpeak,ST_Slope):
     df = pd.DataFrame(columns=Inputs)
     df.at[0,"Age"] = Age    
