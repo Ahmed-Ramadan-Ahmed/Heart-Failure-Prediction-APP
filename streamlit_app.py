@@ -58,7 +58,8 @@ def Main():
     
     leetcode_url = "https://leetcode.com/u/A_Ramadan_A/"
     codeforces_url = "https://codeforces.com/profile/Master_by2025"
-    
+
+    st.sidebar.image("Ahmed.jpg", width=100)
     # Create a sidebar
     with st.sidebar:
         with st.sidebar.container():
