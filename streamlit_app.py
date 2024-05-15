@@ -52,6 +52,17 @@ def Main():
     ExerciseAngina = st.selectbox("Exercise Angina",['Yes','No'])
     Oldpeak = st.slider("Old Peak",min_value=-2.6 , max_value=6.2 , step=1.0,value = 1.0)
     ST_Slope = st.selectbox("ST Slope",['Flat','Up','Down'])
+
+    linkedin_url = "https://www.linkedin.com/in/ahmed-ramadan-348264225/"
+    github_url = "https://github.com/Ahmed-Ramadan-Ahmed"
+    with st.sidebar:
+        with st.sidebar.container():
+            st.write("Follow me")
+            st.write("Ahmed Ramadan Ahmed")
+            st.markdown(f"[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)]({linkedin_url})")   
+            st.markdown(f"[![GitHub](https://img.shields.io/badge/GitHub-Profile-green)]({github_url})")
+        
+
     
     if st.button("Predict"):
         result = prediction(Age,Sex,ChestPainType,RestingBP,Cholesterol,FastingBS,RestingECG,MaxHR,ExerciseAngina,Oldpeak,ST_Slope)
