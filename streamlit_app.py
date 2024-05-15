@@ -1,13 +1,8 @@
-import pickle
-import pandas as pd
-import numpy as np
 import streamlit as st
-from xgboost import XGBClassifier
+import pandas as pd
 
-with open('model.pkl', 'rb') as f:
-    Model = pickle.load(f)
-with open('Inputs.pkl', 'rb') as f:
-    Inputs = pickle.load(f)
+Model = pd.read_pickle("model.pkl")
+Inputs = pd.read_pickle("Inputs.pkl")
     
 def prediction(Age,Sex,ChestPainType,RestingBP,Cholesterol,FastingBS,RestingECG,MaxHR,ExerciseAngina,Oldpeak,ST_Slope):
     df = pd.DataFrame(columns=Inputs)
