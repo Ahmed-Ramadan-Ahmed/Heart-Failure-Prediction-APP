@@ -55,12 +55,22 @@ def Main():
 
     linkedin_url = "https://www.linkedin.com/in/ahmed-ramadan-348264225/"
     github_url = "https://github.com/Ahmed-Ramadan-Ahmed"
+    
+    leetcode_url = "https://leetcode.com/u/A_Ramadan_A/"
+    codeforces_url = "https://codeforces.com/profile/Master_by2025"
+    
+    # Create a sidebar
     with st.sidebar:
         with st.sidebar.container():
-            st.write("Follow me")
-            st.write("Ahmed Ramadan Ahmed")
-            st.markdown(f"[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)]({linkedin_url})")   
+            st.write("Connect with me:")
+            # GitHub badge
             st.markdown(f"[![GitHub](https://img.shields.io/badge/GitHub-Profile-green)]({github_url})")
+            # LinkedIn badge
+            st.markdown(f"[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)]({linkedin_url})")
+            # LeetCode badge
+            st.markdown(f"[![LeetCode](https://img.shields.io/badge/LeetCode-Profile-red)]({leetcode_url})")
+            # Codeforces badge
+            st.markdown(f"[![Codeforces](https://img.shields.io/badge/Codeforces-Profile-purple)]({codeforces_url})")
         
 
     
