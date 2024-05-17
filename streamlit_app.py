@@ -48,10 +48,10 @@ def Main():
     Cholesterol = st.slider("Cholesterol Level",min_value=0.0 , max_value=600.0 , step=1.0,value = 1.0)
     FastingBS = st.selectbox("Fasting Blood Suger",['Yes','No'])
     RestingECG = st.selectbox("Resting Rlectrocardiogram Result",['Normal', 'LVH','ST'])
-    MaxHR = st.slider("MaxHR",min_value=60.0 , max_value=202.0 , step=1.0,value = 1.0)
+    MaxHR = st.slider("Max Heart Rate",min_value=60.0 , max_value=202.0 , step=1.0,value = 1.0)
     ExerciseAngina = st.selectbox("Exercise Angina",['Yes','No'])
-    Oldpeak = st.slider("Old Peak",min_value=-2.6 , max_value=6.2 , step=1.0,value = 1.0)
-    ST_Slope = st.selectbox("ST Slope",['Flat','Up','Down'])
+    Oldpeak = st.slider("Old Heart Peak",min_value=-2.6 , max_value=6.2 , step=1.0,value = 1.0)
+    ST_Slope = st.selectbox("ST/Heart Rate Slope",['Flat','Up','Down'])
 
     linkedin_url = "https://www.linkedin.com/in/ahmed-ramadan-348264225/"
     github_url = "https://github.com/Ahmed-Ramadan-Ahmed"
